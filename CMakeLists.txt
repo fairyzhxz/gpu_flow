@@ -1,4 +1,7 @@
 cmake_minimum_required(VERSION 2.4)
+
+set(CUDA_NVCC_FLAGS -arch=compute_52;-code=sm_52)
+
 #set(OpenCV_DIR /home/pedro/opencv-3.1.0/build)
 # QT5 insert
 
@@ -23,7 +26,8 @@ cmake_minimum_required(VERSION 2.4)
   set(CMAKE_CXX_FLAGS "${Qt5Widgets_EXECUTABLE_COMPILE_FLAGS}")
 
 # OpenCV Config
-SET(OpenCV_DIR "/home/pedro/opencv-2.4.13.6/build")
+SET(OpenCV_DIR "/home/fairy/opencv-2.4.13.6/build")
+SET(CUDA_USE_STATIC_CUDA_RUNTIME OFF)
 find_package( OpenCV REQUIRED )
 set(OpenCV_FOUND 1)
 message(STATUS "    version: ${OpenCV_VERSION}")
@@ -41,6 +45,7 @@ if(COMMAND cmake_policy)
 endif(COMMAND cmake_policy)
 
 ################################
+
 
 option(WARP ON)
 if(WARP)
@@ -70,6 +75,7 @@ else()
       ${Qt5Widgets_LIBRARIES}
     )
 endif()
+
 ################################
 
 foreach(dir ${DIRS})
