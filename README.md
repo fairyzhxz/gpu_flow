@@ -96,9 +96,9 @@ Additional features in `compute_flow.cpp`:
 
 
 ### Error:
-  Though having spent three days to run the program, I still haven't solve the last problem. I want to die. ...
+  Though having spent three days to run the program, I still don't solve the last problem. I wanna die. ...
   
-  SOMEBODY HELP!!!
+  SOMEBODY HELPPPPPPPPP!!!
   ```
   OpenCV Error: Gpu API call (invalid device function) in call, file /home/fairy/opencv-2.4.13.6/modules/gpu/include/opencv2/gpu/device/detail/transform_detail.hpp, line 361
 terminate called after throwing an instance of 'cv::Exception'
