@@ -50,10 +50,10 @@ bool resize_img = true;
 
 // These are default paths
 
-std::string vid_path = "/home/pedro/gpu_flow/avis/";
+std::string vid_path = "/home/fairy/workspace/dataset/clip/";
 
-std::string out_path	= "/home/pedro/gpu_flow/tvl1_flow/";
-std::string out_path_jpeg	= "/home/pedro/gpu_flow/rgb/";
+std::string out_path	= "/home/fairy/workspace/dataset/flow/tvl1_flow/";
+std::string out_path_jpeg	= "/home/fairy/workspace/dataset/flow/rgb/";
 
 bool createOutDirs = true;
 
@@ -413,7 +413,7 @@ int main( int argc, char *argv[] )
 					}
 				}
 
-				sprintf(cad,"/frame%06d.jpg",nframes + 1);
+                                sprintf(cad,"/frame%d.jpg",nframes + 1);
 				if(rgb){
 					if( resize_img == true )
 					{
