@@ -95,3 +95,11 @@ Additional features in `compute_flow.cpp`:
 ```
 
 
+### Error:
+  Though spending a-full-week time to run the code, I still haven't solve the problem.
+  ```
+  OpenCV Error: Gpu API call (invalid device function) in call, file /home/fairy/opencv-2.4.13.6/modules/gpu/include/opencv2/gpu/device/detail/transform_detail.hpp, line 361
+terminate called after throwing an instance of 'cv::Exception'
+  what():  /home/fairy/opencv-2.4.13.6/modules/gpu/include/opencv2/gpu/device/detail/transform_detail.hpp:361: error: (-217) invalid device function in function call
+  ```
+ 
